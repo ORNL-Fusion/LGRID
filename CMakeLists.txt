@@ -2,11 +2,9 @@ cmake_minimum_required (VERSION 3.14)
 
 project (lgrid CXX)
 
-set (CMAKE_CXX_STANDARD 11)
-
 add_executable (lgrid)
-add_dependencies (lgrid stell)
 
-target_link_libraries (lgrid stell)
+target_link_libraries (lgrid PUBLIC stell)
+target_compile_features (lgrid PUBLIC cxx_std_11)
 
 add_subdirectory (Sources)
