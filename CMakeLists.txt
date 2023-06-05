@@ -8,3 +8,5 @@ target_link_libraries (lgrid PUBLIC stell)
 target_compile_features (lgrid PUBLIC cxx_std_11)
 
 add_subdirectory (Sources)
+
+install (TARGETS lgrid)
