@@ -3,6 +3,7 @@ cmake_minimum_required (VERSION 3.14)
 project (lgrid CXX Fortran)
 
 add_executable (lgrid)
+add_dependencies (lgrid pull_lgrid)
 
 target_link_libraries (lgrid PUBLIC stell)
 target_compile_features (lgrid PUBLIC cxx_std_11)
